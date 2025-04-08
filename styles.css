@@ -1,0 +1,299 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #1d1d1f;
+    background-color: #f5f5f7;
+}
+
+/* Header styles */
+header {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.back-button {
+    position: absolute;
+    left: 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.back-button:hover {
+    color: #0071e3;
+}
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Product page styles */
+.product {
+    display: flex;
+    gap: 2rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.product img {
+    width: 300px;
+    height: auto;
+}
+
+.details {
+    flex: 1;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #1d1d1f;
+    margin: 1rem 0;
+}
+
+.description {
+    color: #86868b;
+    margin: 1rem 0;
+}
+
+.colors {
+    margin: 2rem 0;
+}
+
+.color-options {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.color {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    cursor: pointer;
+}
+
+.color:hover {
+    border-color: #0071e3;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.buy-button {
+    background-color: #0071e3;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.buy-button.purchase {
+    background-color: #34c759;
+}
+
+.buy-button:hover {
+    background-color: #0077ed;
+}
+
+.buy-button.purchase:hover {
+    background-color: #30b753;
+}
+
+/* Information page styles */
+.product-info-page {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.info-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.info-section {
+    background: #f5f5f7;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.info-section h3 {
+    color: #0071e3;
+    margin-bottom: 1rem;
+}
+
+.info-section p {
+    margin-bottom: 1rem;
+}
+
+.info-section ul {
+    list-style-position: inside;
+    margin-left: 1rem;
+}
+
+.info-section li {
+    margin-bottom: 0.5rem;
+}
+
+.color-option {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.color-option p {
+    margin: 0;
+}
+
+.purchase-section {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/* Purchase page styles */
+.purchase-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.purchase-summary {
+    background: #f5f5f7;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.summary-item {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.summary-item img {
+    width: 100px;
+    height: auto;
+}
+
+.summary-details h3 {
+    margin-bottom: 0.5rem;
+}
+
+.purchase-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+input, textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.total {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+}
+
+.total-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #86868b;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .product {
+        flex-direction: column;
+    }
+    
+    .product img {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .info-sections {
+        grid-template-columns: 1fr;
+    }
+
+    .back-button {
+        position: static;
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .purchase-page {
+        grid-template-columns: 1fr;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+} 

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase iPhone 13 Pro Max</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Purchase iPhone 13 Pro Max</h1>
+        <a href="index.html" class="back-button">← Back to Product</a>
+    </header>
+
+    <main>
+        <div class="purchase-page">
+            <div class="purchase-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-item">
+                    <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-max-graphite-select?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1631652956000" alt="iPhone 13 Pro Max">
+                    <div class="summary-details">
+                        <h3>iPhone 13 Pro Max</h3>
+                        <p>Color: Graphite</p>
+                        <p>Storage: 128GB</p>
+                        <p class="price">$1,099.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="purchase-form">
+                <h2>Shipping Information</h2>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Shipping Address</label>
+                    <textarea id="address" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city" required>
+                </div>
+                <div class="form-group">
+                    <label for="state">State</label>
+                    <input type="text" id="state" required>
+                </div>
+                <div class="form-group">
+                    <label for="zip">ZIP Code</label>
+                    <input type="text" id="zip" required>
+                </div>
+
+                <h2>Payment Information</h2>
+                <div class="form-group">
+                    <label for="card">Card Number</label>
+                    <input type="text" id="card" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="expiry">Expiry Date</label>
+                        <input type="text" id="expiry" placeholder="MM/YY" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" required>
+                    </div>
+                </div>
+
+                <div class="total">
+                    <p>Subtotal: $1,099.00</p>
+                    <p>Shipping: $0.00</p>
+                    <p class="total-price">Total: $1,099.00</p>
+                </div>
+
+                <button type="submit" class="buy-button">Complete Purchase</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 iPhone Shop</p>
+    </footer>
+</body>
+</html> 
